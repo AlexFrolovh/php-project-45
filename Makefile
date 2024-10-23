@@ -1,6 +1,6 @@
 install:
-  composer install
+    composer install
 
 
 brain-games:
-  php bin/brain-games.php
+    php bin/brain-games.php
