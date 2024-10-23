@@ -12,6 +12,7 @@
             "email": "alexfrolovyh@list.ru"
         }
     ],
-	"description": "hexlet php-package",
+    "description": "hexlet php-package",
+    "license": "MIT",
     "require": {}
 }
