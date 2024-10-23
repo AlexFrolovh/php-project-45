@@ -1,13 +1,11 @@
 {
     "name": "hexlet/code",
+	"bin": ["bin/php-package"],
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
         }
     },
-    "bin": [
-	    "bin/brain-games"
-    ],
     "authors": [
         {
             "name": "alex",
