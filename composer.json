@@ -12,7 +12,7 @@
             "email": "alexfrolovyh@list.ru"
         }
     ],
-    "description": "hexlet php-package",
+    "description": "hexlet php project 1",
     "license": "MIT",
     "require": {
         "wp-cli/php-cli-tools": "^0.12.1"
