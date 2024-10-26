@@ -2,9 +2,9 @@
     "name": "hexlet/code",
     "bin": ["bin/php-package"],
     "autoload": {
-        "psr-4": {
+        "files": [
             "src/Cli.php"
-        }
+        ]
     },
     "authors": [
         {
