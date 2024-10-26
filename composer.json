@@ -3,7 +3,7 @@
     "bin": ["bin/php-package"],
     "autoload": {
         "psr-4": {
-            "Hexlet\\Code\\": "src/"
+            "src/Cli.php"
         }
     },
     "authors": [
