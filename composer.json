@@ -19,6 +19,5 @@
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.0"
-    },
-    "files.eol": "\n"
+    }
 }
