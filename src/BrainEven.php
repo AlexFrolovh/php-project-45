@@ -2,6 +2,9 @@
 
 namespace BrainGames\BrainEven;
 
+use function cli\line;
+use function cli\prompt;
+
 function game():
 {
   echo "Welcome to the Brain Games!\n";
