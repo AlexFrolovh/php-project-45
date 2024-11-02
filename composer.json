@@ -4,7 +4,8 @@
         "bin/php-package"],
     "autoload": {
         "files": [
-            "src/Cli.php"]
+            "src/Cli.php",
+            "src/BrainEven.php"]
     },
     "authors": [
         {
