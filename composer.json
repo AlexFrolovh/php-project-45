@@ -1,12 +1,10 @@
 {
     "name": "hexlet/code",
     "bin": [
-        "bin/php-package",
-    ],
+        "bin/php-package"],
     "autoload": {
         "files": [
-            "src/Cli.php",
-        ]
+            "src/Cli.php"]
     },
     "authors": [
         {
