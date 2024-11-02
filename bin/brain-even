@@ -1,7 +1,0 @@
-#!/usr/bin/env php
-
-<?php
-
-use function BrainGames\BrainEven\game;
-
-game();
