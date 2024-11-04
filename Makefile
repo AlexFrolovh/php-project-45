@@ -3,7 +3,7 @@ install:
 brain-games:
 	./bin/brain-games
 brain-even:
-	php bin/brain-even.php
+	./bin/brain-games
 validate:
 	composer validate
 lint:
