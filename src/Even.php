@@ -38,7 +38,7 @@ function runEngine($getRightAnswerForRound, $question)
     return;
 }
 
-function game()
+function runEvenGame()
 {
   $getRightAnswerForRound = function () {
   $randomTopNumber = 100;
