@@ -28,7 +28,7 @@ function runEngine($getRightAnswerForRound, $question)
         if ($answerUser == $rightAnswer) {
             line('Correct!');
         } else {
-            line("'{$answerUser}'  is wrong answer ;(. Correct answer was '{$rightAnswer}'");
+            line("'{$answerUser}'  is wrong answer ;(. Correct answer was '{$rightAnswer}'.");
             line("Let's try again, {$name}!");
             return;
         }
