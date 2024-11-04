@@ -28,7 +28,7 @@ function runEngine($getRightAnswerForRound, $question)
         if ($answerUser == $rightAnswer) {
             line('Correct!');
         } else {
-            line("{$answerUser}  is wrong answer ;(. Correct answer was {$rightAnswer}");
+            line('"{$answerUser}"  is wrong answer ;(. Correct answer was "{$rightAnswer}"');
             line("Let's try again, {$name}!");
             return;
         }
@@ -43,7 +43,7 @@ function runEvenGame()
   $getRightAnswerForRound = function () {
   $randomTopNumber = 100;
   $number = rand(0, $randomTopNumber);
-  $rightAnswer = isEven($number) ? 'yes' : 'no';
+  $rightAnswer = isEven($number) ? "yes" : "no";
   $roundQuestion = $number;
     
   return ['roundQuestion' => $roundQuestion, 'rightAnswer' => $rightAnswer];
