@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games;
 
-use function BrainGames\engine;
+use function BrainGames\Engine;
 
 function isEven($number)
 {
