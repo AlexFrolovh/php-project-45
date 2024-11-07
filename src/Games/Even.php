@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Games\Even;
+namespace BrainGames\Games;
 
 use function BrainGames\Engine;
 
@@ -11,9 +11,9 @@ function isEven($number)
 
 function runGameEven()
 {
-    //$gameRules = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
-    //$randomNumber = rand(0, 100);
-    //$rightAnswer = isEven($randomNumber)? 'yes' : 'no';
+    $gameRules = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
+    $randomNumber = rand(0, 100);
+    $rightAnswer = isEven($randomNumber)? 'yes' : 'no';
     
-    engine($gameRules="Answer \"yes\" if the number is even, otherwise answer \"no\".", $randomNumber=rand(0, 100), $rightAnswer=isEven($randomNumber)? 'yes' : 'no');
+    engine();
 }
