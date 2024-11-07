@@ -19,7 +19,6 @@ function engine($gameRules, $randomNumber, $rightAnswer)
     $answer = prompt('Your answer');
     if ($rightAnswer === $answer) {
       line("Correct!");
-      return;
     } else {
       line("\"{$answer}\" is wrong answer ;(. Correct answer was \"{$rightAnswer}\".");
       line("Let's try again, {$name}!");
