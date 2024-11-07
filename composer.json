@@ -6,6 +6,7 @@
     "autoload": {
         "files": [
             "src/Games/Even.php",
+            "src/Engine.php",
             "src/Cli.php"]
     },
     "authors": [
