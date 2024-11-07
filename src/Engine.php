@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Engine;
+namespace BrainGames;
 
 use function cli\line;
 use function cli\prompt;
@@ -26,4 +26,5 @@ function engine($gameRules,$randomNumber,$rightAnswer)
     }
   }
   line("Congratulations, {$name}!");
+  return;
 }
