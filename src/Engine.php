@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const ROUND_COUNT = 3;
 
-function engine()
+function engine($gameRules, $randomNumber, $rightAnswer)
 {
   line('Welcome to the Brain Game!');
   $name = prompt('May I have your name?');
