@@ -5,7 +5,7 @@
         "bin/brain-even"],
     "autoload": {
         "files": [
-            "src/Even.php",
+            "src/Games/Even.php",
             "src/Cli.php"]
     },
     "authors": [
