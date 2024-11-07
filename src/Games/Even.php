@@ -4,7 +4,7 @@ namespace BrainGames\Games\Even;
 
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\src\Engine;
+use function BrainGames\Engine;
 
 const ROUND_COUNT = 3;
 
