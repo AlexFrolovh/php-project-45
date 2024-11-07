@@ -26,9 +26,9 @@ function runGameEven()
     $rightAnswer = isEven($randomNumber)? 'yes' : 'no';
 
     line("Question: {$randomNumber}\n");
-    $answer = prompt('Your answer:');
+    $answer = prompt('Your answer');
     if ($rightAnswer === $answer) {
-      line("Correct!\n");
+      line("Correct!");
     } else {
       line("\"{$answer}\" is wrong answer ;(. Correct answer was \"{$rightAnswer}\".\n");
       line("Let's try again, {$name}!");
