@@ -19,5 +19,5 @@ function runGameEven()
   //$randomNumber = rand(0, 100);
   $rightAnswer = isEven($randomNumber)? 'yes' : 'no';
     
-  engine($gameRules, $rightAnswer);
+  engine($gameRules, $rightAnswer, $randomNumber);
 }
