@@ -7,11 +7,6 @@ use function cli\prompt;
 
 const ROUND_COUNT = 3;
 
-function isEven($number)
-{
-    return $number % 2 === 0;
-}
-
 function engine()
 {
 
