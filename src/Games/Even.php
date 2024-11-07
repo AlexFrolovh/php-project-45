@@ -20,7 +20,7 @@ function runGameEven()
     $randomNumber = rand(0, 100);
     $rightAnswer = isEven($randomNumber)? 'yes' : 'no';
     return ['randomNumber' => $randomNumber, 'rightAnswer' => $rightAnswer];
-};
+    };
     
   engine("Answer \"yes\" if the number is even, otherwise answer \"no\".", $gameСonditions);
 }
