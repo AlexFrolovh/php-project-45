@@ -2,8 +2,6 @@
 
 namespace BrainGames\Games\Even;
 
-use function cli\line;
-use function cli\prompt;
 use function BrainGames\Engine;
 
 function isEven($number)
