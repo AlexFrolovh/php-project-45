@@ -12,8 +12,8 @@ function isEven($number)
 function runGameEven()
 {
     $gameRules = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
-    $randomNumber = rand(0, 100);
-    $rightAnswer = isEven($randomNumber)? 'yes' : 'no';
+    $randomNumber = [rand(0, 100)];
+    $rightAnswer = isEven($randomNumber[0])? 'yes' : 'no';
     
-    engine($gameRules, $randomNumber, $rightAnswer);
+    engine($gameRules, $randomNumber[0], $rightAnswer);
 }
