@@ -6,8 +6,6 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine;
 
-const ROUND_COUNT = 3;
-
 function isEven($number)
 {
     return $number % 2 === 0;
