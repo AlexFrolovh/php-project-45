@@ -22,7 +22,6 @@ function getRightAnswer($randomNumber)
 {
     $rightAnswer = isEven($randomNumber) ? 'yes' : 'no';
     return $rightAnswer;
-  }
 }
 
 function invert($answer)
