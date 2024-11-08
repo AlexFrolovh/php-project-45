@@ -9,7 +9,7 @@ use function BrainGames\Games\invert;
 
 const ROUND_COUNT = 3;
 
-function engine($gameRules, $randomNumbers, $answer, $index)
+function engine($gameRules, $randomNumbers, $answer)
 {
   line('Welcome to the Brain Game!');
   $name = prompt('May I have your name?');
@@ -17,10 +17,9 @@ function engine($gameRules, $randomNumbers, $answer, $index)
   line($gameRules);
 
   for ($i = 0; $i < ROUND_COUNT; $i++) {
-    line("Question: {$randomNumbers[$index]}");
+    line("Question: {$randomNumbers[0]}");
     $answer = prompt('Your answer');
     if (getRightAnswer($randomNumbers) === $answer) {
-      $index++;
       line("Correct!");
     } else {
       line("\"{$answer}\" is wrong answer ;(. Correct answer was " . '"' . invert($answer) . '".' );
