@@ -12,16 +12,15 @@ function isEven($number)
 function runGameEven()
 {
     $gameRules = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
-    $randomNumbers = [rand(0, 100)];
+    $randomNumber = rand(0, 100);
     $answer = '';
     
-    engine($gameRules, $randomNumbers, $answer);
+    engine($gameRules, $randomNumber, $answer);
 }
 
-function getRightAnswer($randomNumbers)
+function getRightAnswer($randomNumber)
 {
-    foreach ($randomNumbers as $num) {
-    $rightAnswer = isEven($num) ? 'yes' : 'no';
+    $rightAnswer = isEven($randomNumber) ? 'yes' : 'no';
     return $rightAnswer;
   }
 }
