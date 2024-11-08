@@ -9,7 +9,7 @@ use function BrainGames\Games\invert;
 
 const ROUND_COUNT = 3;
 
-function engine($gameRules, $randomNumbers, $answer, $index = 0)
+function engine($gameRules, $randomNumbers, $answer, $index)
 {
   line('Welcome to the Brain Game!');
   $name = prompt('May I have your name?');
