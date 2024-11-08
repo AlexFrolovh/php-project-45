@@ -4,8 +4,8 @@ namespace BrainGames;
 
 use function cli\line;
 use function cli\prompt;
-use function Games\getRightAnswer;
-use function Games\invert;
+use function BrainGames\Games\getRightAnswer;
+use function BrainGames\Games\invert;
 
 const ROUND_COUNT = 3;
 
