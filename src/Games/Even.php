@@ -15,12 +15,12 @@ function runGameEven()
     $randomNumbers = [rand(0, 100), rand(0, 100), rand(0, 100)];
     $answer = '';
     
-    engine($gameRules, $randomNumbers, $answer, 0);
+    engine($gameRules, $randomNumbers, $answer);
 }
 
 function getRightAnswer($randomNumbers)
 {
-    $rightAnswer = isEven($randomNumbers[$index]) ? 'yes' : 'no';
+    $rightAnswer = isEven($randomNumbers[0]) ? 'yes' : 'no';
     return $rightAnswer;
 }
 
