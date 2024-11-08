@@ -20,8 +20,7 @@ function runGameEven()
 
 function getRightAnswer($randomNumbers)
 {
-    foreach ($randomNumbers as $randomNumber)
-    $rightAnswer = isEven($randomNumber) ? 'yes' : 'no';
+    $rightAnswer = isEven($randomNumbers[]) ? 'yes' : 'no';
     return $rightAnswer;
 }
 
