@@ -18,10 +18,10 @@ function engine($gameRules, $randomNumbers, $answer)
 
   for ($i = 0; $i < ROUND_COUNT;) {
     line("Question: {$randomNumbers[$i]}");
-    $i++;
     $answer = prompt('Your answer');
     if (getRightAnswer($randomNumbers) === $answer) {
       line("Correct!");
+      $i++;
     } else {
       line("\"{$answer}\" is wrong answer ;(. Correct answer was " . '"' . invert($answer) . '".' );
       line("Let's try again, {$name}!");
