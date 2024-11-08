@@ -7,15 +7,15 @@ use function cli\prompt;
 
 const ROUND_COUNT = 3;
 
-function engine($gameRules, $randomNumber, $rightAnswer, $i)
+function engine($gameRules, $randomNumber, $rightAnswer)
 {
   line('Welcome to the Brain Game!');
   $name = prompt('May I have your name?');
   line("Hello, %s!", $name);
   line($gameRules);
 
-  for ($i < ROUND_COUNT; $i++) {
-    line("Question: {$randomNumber[$i]}");
+  for ($i = 0; $i < ROUND_COUNT; $i++) {
+    line("Question: {$randomNumber[$index]}");
     $answer = prompt('Your answer');
     if ($rightAnswer === $answer) {
       line("Correct!");
