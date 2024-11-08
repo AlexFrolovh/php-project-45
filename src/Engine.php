@@ -16,7 +16,7 @@ function engine($gameRules, $randomNumbers, $answer, $index)
   line("Hello, %s!", $name);
   line($gameRules);
 
-  for ($i = 0; $i < ROUND_COUNT; $i++;) {
+  for ($i = 0; $i < ROUND_COUNT; $i++) {
     line("Question: {$randomNumbers[$index]}");
     $answer = prompt('Your answer');
     if (getRightAnswer($randomNumbers) === $answer) {
