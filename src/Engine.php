@@ -4,11 +4,12 @@ namespace BrainGames;
 
 use function cli\line;
 use function cli\prompt;
-use function Games\Even\getRightAnswer;
+use function Games\getRightAnswer;
+use function Games\invert;
 
 const ROUND_COUNT = 3;
 
-function engine($gameRules, $randomNumber)
+function engine($gameRules, $randomNumber, $answer)
 {
   line('Welcome to the Brain Game!');
   $name = prompt('May I have your name?');
