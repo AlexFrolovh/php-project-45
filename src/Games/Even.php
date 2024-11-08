@@ -15,7 +15,7 @@ function runGameEven()
     $randomNumbers = [rand(0, 100), rand(0, 100), rand(0, 100)];
     $answer = '';
     
-    engine($gameRules, $randomNumbers, $answer);
+    engine($gameRules, $randomNumbers, $answer, $index);
 }
 
 function getRightAnswer($randomNumbers)
