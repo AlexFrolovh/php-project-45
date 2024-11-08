@@ -22,7 +22,6 @@ function getRightAnswer($randomNumbers)
 {
     $i = 0;
     $rightAnswer = isEven($randomNumbers[$i]) ? 'yes' : 'no';
-    $i++;
     return $rightAnswer;
 }
 
