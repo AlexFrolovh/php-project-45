@@ -18,12 +18,6 @@ function runGameEven()
     engine($gameRules, $randomNumbers, $answer);
 }
 
-function getRightAnswer($randomNumbers)
-{
-    $rightAnswer = isEven($randomNumbers[0]) ? 'yes' : 'no';
-    return $rightAnswer;
-}
-
 function invert($answer)
 {
   if ($answer === 'yes') {
