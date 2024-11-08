@@ -24,7 +24,7 @@ function engine($gameRules, $randomNumbers, $answer)
     if (isEven($num) === $answer) {
       line("Correct!");
     } else {
-      line("\"{$answer}\" is wrong answer ;(. Correct answer was " . '"' . isEven($num) . '".' );
+      line("\"{$answer}\" is wrong answer ;(. Correct answer was " . '"' . invert($answer) . '".' );
       line("Let's try again, {$name}!");
       return;
     }
