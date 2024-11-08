@@ -19,7 +19,7 @@ function engine($gameRules, $randomNumbers, $answer)
   for ($i = 0; $i < ROUND_COUNT; $i++) {
     line("Question: {$randomNumbers[$i]}");
     $answer = prompt('Your answer');
-    if (getRightAnswer($randomNumbers[$i]) === $answer) {
+    if (getRightAnswer($randomNumbers) === $answer) {
       line("Correct!");
     } else {
       line("\"{$answer}\" is wrong answer ;(. Correct answer was " . '"' . invert($answer) . '".' );
