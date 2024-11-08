@@ -6,7 +6,7 @@ use function BrainGames\engine;
 
 function isEven($number)
 {
-    return $number % 2 === 0;
+    return ($number % 2 === 0) ? 'yes' : 'no';
 }
 
 function runGameEven()
