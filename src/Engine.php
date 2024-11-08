@@ -22,7 +22,7 @@ function engine($gameRules, $randomNumber, $answer)
     if (getRightAnswer($randomNumber) === $answer) {
       line("Correct!");
     } else {
-      line("\"{$answer}\" is wrong answer ;(. Correct answer was \"invert($answer)\".");
+      line("\"{$answer}\" is wrong answer ;(. Correct answer was " . '"' . invert($answer) . '".' );
       line("Let's try again, {$name}!");
       return;
     }
