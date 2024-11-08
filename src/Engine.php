@@ -6,6 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Games\getRightAnswer;
 use function BrainGames\Games\invert;
+use function BrainGames\Games\isEven;
 
 const ROUND_COUNT = 3;
 
