@@ -4,13 +4,11 @@ namespace BrainGames;
 
 use function cli\line;
 use function cli\prompt;
-use function BrainGames\Games\getRightAnswer;
-use function BrainGames\Games\invert;
 use function BrainGames\Games\isEven;
 
 const ROUND_COUNT = 3;
 
-function engine($gameRules, $randomNumbers, $answer)
+function engine($gameRules, $answer, $question, $rightAnswer)
 {
   line('Welcome to the Brain Game!');
   $name = prompt('May I have your name?');
@@ -18,13 +16,12 @@ function engine($gameRules, $randomNumbers, $answer)
   line($gameRules);
 
   for ($i = 0; $i < ROUND_COUNT; $i++) {
-    $num = $randomNumbers[0 + $i];
-    line("Question: {$num}");
+    line("Question: {$question}");
     $answer = prompt('Your answer');
-    if (isEven($num) === $answer) {
+    if ($answer === $rightAnswer) {
       line("Correct!");
     } else {
-      line("\"{$answer}\" is wrong answer ;(. Correct answer was " . '"' . invert($answer) . '".' );
+      line("\"{$answer}\" is wrong answer ;(. Correct answer was \"{$rightAnswer}\".");
       line("Let's try again, {$name}!");
       return;
     }
