@@ -12,12 +12,15 @@ function isEven($number)
 function runGameEven()
 {
     $gameRules = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
-    $Round = function () {
+    /*$Round = function () {
         $question = rand(0, 100);
         $rightAnswer = isEven($question) ? 'yes' : 'no';
     
         return ['question' => $question, 'rightAnswer' => $rightAnswer];
-    };
+    };*/
+    $question = rand(0, 100);
+    $rightAnswer = isEven($question) ? 'yes' : 'no';
+    line("Question: {$question}");
     
-    engine($gameRules, $Round);
+    engine($gameRules, $rightAnswer);
 }
