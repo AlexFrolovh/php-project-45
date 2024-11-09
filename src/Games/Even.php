@@ -20,12 +20,3 @@ function runGameEven()
     
     engine($gameRules, $answer, $question, $rightAnswer, $index);
 }
-
-function invert($answer)
-{
-  if ($answer === 'yes') {
-    return $answer = 'no';
-  } else {
-    return $answer = 'yes';
-  }
-}
