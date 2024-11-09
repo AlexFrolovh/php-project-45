@@ -18,7 +18,6 @@ function engine($gameRules, $answer, $question, $rightAnswer, $index)
   for ($i = 0; $i < ROUND_COUNT; $i++) {
     line("Question: {$question}");
     $answer = prompt('Your answer');
-    $index++;
     if ($answer === $rightAnswer) {
       line("Correct!");
     } else {
