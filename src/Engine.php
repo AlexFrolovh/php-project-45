@@ -5,7 +5,6 @@ namespace BrainGames;
 use function cli\line;
 use function cli\prompt;
 use function BrainGames\Games\isEven;
-use function BrainGames\Games\rightAnswer;
 
 const ROUND_COUNT = 3;
 
