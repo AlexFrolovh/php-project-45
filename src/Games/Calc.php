@@ -6,9 +6,8 @@ use function BrainGames\engine;
 
 function runGameCalc()
 {
-    $gameRules = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
-    $randomNumbers = [rand(0, 100), rand(0, 100), rand(0, 100)];
-    $answer = '';
+    $gameRules = "What is the result of the expression?";
     
-    engine($gameRules, $randomNumbers, $answer);
+    
+    engine($gameRules, $);
 }
