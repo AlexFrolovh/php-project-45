@@ -8,7 +8,7 @@ use function BrainGames\Games\isEven;
 
 const ROUND_COUNT = 3;
 
-function engine($gameRules, $question)
+function engine($gameRules, $question, $index, $rightAnswer)
 {
   line('Welcome to the Brain Game!');
   $name = prompt('May I have your name?');
@@ -16,9 +16,8 @@ function engine($gameRules, $question)
   line($gameRules);
 
   for ($i = 0; $i < ROUND_COUNT; $i++) {
-    line("Question: {$question[$i]}");
+    line("Question: {$question[$index]}");
     $answer = prompt('Your answer');
-    $rightAnswer = isEven($question[$i]) ? 'yes' : 'no';
     if ($answer === $rightAnswer) {
       line("Correct!");
     } else {
