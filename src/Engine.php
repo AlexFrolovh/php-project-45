@@ -9,7 +9,7 @@ use function BrainGames\Games\rightAnswer;
 
 const ROUND_COUNT = 3;
 
-function engine($gameRules, $question)
+function engine($gameRules, $question, $rightAnswer)
 {
   line('Welcome to the Brain Game!');
   $name = prompt('May I have your name?');
@@ -17,12 +17,12 @@ function engine($gameRules, $question)
   line($gameRules);
 
   for ($i = 0; $i < ROUND_COUNT; $i++) {
-    line("Question: {$question[$i]}");
+    line("Question: {$question}");
     $answer = prompt('Your answer');
-    if ($answer === rightAnswer($question[$i])) {
+    if ($answer === rightAnswer($question)) {
       line("Correct!");
     } else {
-      line("\"{$answer}\" is wrong answer ;(. Correct answer was \"{rightAnswer($question[$i])}\".");
+      line("\"{$answer}\" is wrong answer ;(. Correct answer was \"{$rightAnswer}\".");
       line("Let's try again, {$name}!");
       return;
     }
