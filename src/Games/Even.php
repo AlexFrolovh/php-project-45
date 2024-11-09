@@ -21,7 +21,7 @@ function runGameEven()
     };*/
     $question = rand(0, 100);
     $rightAnswer = isEven($question) ? 'yes' : 'no';
-    line("Question: {$question}");
     
     engine($gameRules, $rightAnswer);
+    line("Question: {$question}");
 }
