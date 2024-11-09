@@ -14,8 +14,10 @@ function runGameEven()
     $gameRules = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
     $randomNumbers = [rand(0, 100), rand(0, 100), rand(0, 100)];
     $answer = '';
+    $question = $randomNumbers[0 + $i];
+    $rightAnswer = isEven($question);
     
-    engine($gameRules, $randomNumbers, $answer);
+    engine($gameRules, $answer, $question, $rightAnswer);
 }
 
 function invert($answer)
