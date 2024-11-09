@@ -9,15 +9,19 @@ function isEven($number)
     return ($number % 2 === 0);
 }
 
-function rightAnswer($number)
+$rightAnswer function ($number)
 {
     return isEven($number) ? 'yes' : 'no';
-}
+};
 
 function runGameEven()
 {
     $gameRules = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
     $question = rand(0, 100);
+    $rightAnswer = function ($number)
+    {
+        return isEven($number) ? 'yes' : 'no';
+    };
     
-    engine($gameRules, $question);
+    engine($gameRules, $question, $rightAnswer);
 }
