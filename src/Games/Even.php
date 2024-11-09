@@ -6,17 +6,15 @@ use function BrainGames\engine;
 
 function isEven($number)
 {
-    return ($number % 2 === 0) ? 'yes' : 'no';
+    return ($number % 2 === 0);
 }
 
 function runGameEven()
 {
     $gameRules = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
-    $randomNumbers = [rand(0, 100), rand(0, 100), rand(0, 100)];
-    $answer = '';
-    $index = [0, 1, 2];
-    $question = $randomNumbers[$index[$i]];
-    $rightAnswer = isEven($question);
+    $number = rand(0, 100);
+    $question = $number;
+    $rightAnswer = isEven($question) ? 'yes' : 'no';
     
-    engine($gameRules, $answer, $question, $rightAnswer, $index, $i);
+    engine($gameRules, $question, $rightAnswer);
 }
