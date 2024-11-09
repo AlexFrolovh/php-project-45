@@ -9,11 +9,6 @@ function isEven($number)
     return ($number % 2 === 0);
 }
 
-$rightAnswer function ($number)
-{
-    return isEven($number) ? 'yes' : 'no';
-};
-
 function runGameEven()
 {
     $gameRules = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
