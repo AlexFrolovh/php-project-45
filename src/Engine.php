@@ -22,7 +22,7 @@ function engine($gameRules, $question)
     if ($answer === rightAnswer($question[$i])) {
       line("Correct!");
     } else {
-      line("\"{$answer}\" is wrong answer ;(. Correct answer was \"{rightAnswer($question[$i]}\".");
+      line("\"{$answer}\" is wrong answer ;(. Correct answer was \"{rightAnswer($question[$i])}\".");
       line("Let's try again, {$name}!");
       return;
     }
