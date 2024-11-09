@@ -17,7 +17,7 @@ function rightAnswer($number)
 function runGameEven()
 {
     $gameRules = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
-    $question = [rand(0, 100), rand(0, 100), rand(0, 100)];
+    $question = rand(0, 100);
     
     engine($gameRules, $question);
 }
